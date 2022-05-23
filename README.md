@@ -1,5 +1,5 @@
 # apiExample
-An example of paginating through an api call and loading it into SQL Server. This example uses dynamic .SQL to allow for multiple calls to run. I've built out the general table structure but only fully populated columns/rows for a specific example using Registered Businesses that pay taxes in San Francisco, CA. 
+An example of paginating through an api call and loading it into SQL Server. This example uses dynamic .SQL to allow for multiple calls to run. I've built out the general table structure but only fully populated columns/rows for a specific example using Registered Businesses that pay taxes in San Francisco, CA. This is a very quick build and doesn't have PKs and FKs or any FK constraints as would be built out for PRD.
 
 Link: https://data.sfgov.org/Economy-and-Community/Registered-Business-Locations-San-Francisco/g8m3-pdis/data
 
