@@ -1,5 +1,7 @@
 # apiExample
-an example of paginating through an api call and loading it into SQL Server. This example uses dynamic .SQL to allow for multiple calls to run. 
+An example of paginating through an api call and loading it into SQL Server. This example uses dynamic .SQL to allow for multiple calls to run. I've built out the general table structure but only fully populated columns/rows for a specific example using Registered Businesses that pay taxes in San Francisco, CA. 
+
+Link: https://data.sfgov.org/Economy-and-Community/Registered-Business-Locations-San-Francisco/g8m3-pdis/data
 
 
 DATABASES
@@ -8,8 +10,9 @@ DATABASES
   3) DataWarehouse - the production db. An upsert/merge statement from Staging-->DataWarehouse would handle the final load/transform in the ETL process
 
 
-DATABASE TABLES: 
-  1) DataMining
+DATABASE TABLES: (NOTE: not all columns have data and there are rows missing in subsequent tables. Only the columns/rows pertaining to the SF DBA api call is complete).
+
+1) DataMining
     * api.dimAPI            - API sources, descriptions, documentation needed, apiKeys,  apiURLs and any additional information needed for the api call.
     * api.dimCall           - call functions for every API along with a flag indicating if the call has a parameter required.
     * api.dimCallParameter  - parameters that can be used or returned in an apiCall and flags indicating if the parameter is required or if it can be an input
